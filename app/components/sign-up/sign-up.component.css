@@ -1,0 +1,120 @@
+.background-container {
+    background-image: url(../../../assets//Images/loginBackground.svg);
+    width: 98vw;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-in-container {
+    background: #EDB046;
+    height: 530px;
+    width: 690px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 8px 0px #0000001A;
+}
+.heading {
+    font-family: Lexend;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 75px;
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+
+}
+
+.sub-heading {
+    font-family: Lexend;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    color: white;
+}
+
+input {
+    font-family: Lexend;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    width: 465px;
+    height: 44px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 20px;
+    box-shadow: 2px 2px 8px 0px #0000001A;
+    padding-left: 20px;
+    
+}
+
+form {
+    margin-top: 66px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.sign-up-btn {
+    margin-top: 40px;
+    height: 50px;
+    width: 131px;
+    border-radius: 5px;
+    border: none;
+    background: #BA5112;
+    color: white;
+    font-family: Lexend;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #BA5112;
+}
+.sign-in-link {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 400;
+    font-family: Lexend;
+    font-size: 14px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .sign-in-container {
+        height: 500px;
+        width: 90%;
+    }
+
+    .sign-up-btn {
+        margin-top: 40px;
+        height: 50px;
+        width: 131px;
+        border-radius: 5px;
+        border: none;
+
+
+        font-family: Lexend;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    input {
+        width: 85%;
+        padding-left: 10px;
+    }
+
+}

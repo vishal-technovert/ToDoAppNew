@@ -1,0 +1,31 @@
+<!-- <div class="side-bar">
+    <div class="title">
+        To-Do App
+    </div>
+    <div class="add-task">
+        <button class="add-task-btn" (click)="openAddTaskModal()">Add Task</button>
+    </div>
+    <div class="dashboard-options">
+        <div (click)="setFilter('all')" [ngClass]="filter=='all' ? 'nav-item-selected':'nav-item'">Dashboard</div>
+        <div (click)="setFilter('active')" [ngClass]="filter=='active' ?'nav-item-selected': 'nav-item'">Active</div>
+        <div (click)="setFilter('completed')" [ngClass]="filter=='completed' ?'nav-item-selected': 'nav-item'">Completed
+        </div>
+    </div>
+</div>
+<add-task *ngIf="isAddTaskModalVisible" (closeModal)="closeAddTaskModal()" (taskAdded)="refreshTasks()"></add-task> -->
+
+
+<div class="side-bar">
+    <div class="title">
+      To-Do App
+    </div>
+    <div class="add-task">
+      <button class="add-task-btn" (click)="openAddTaskModal()"><div>Add Task </div><div><img class="add-task-img" src="../../../assets/Images/Add button.svg"></div></button>
+    </div>
+    <div class="dashboard-options">
+      <div class="nav-item" (click)="setFilter('all')" [ngClass]="{'nav-item-selected': filter === 'all'}">Dashboard</div>
+      <div class="nav-item" (click)="setFilter('active')" [ngClass]="{'nav-item-selected': filter === 'active'}">Active</div>
+      <div class="nav-item" (click)="setFilter('completed')" [ngClass]="{'nav-item-selected': filter === 'completed'}">Completed</div>
+    </div>
+  </div>
+  

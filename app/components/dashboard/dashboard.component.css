@@ -1,0 +1,110 @@
+.dashboard-container {
+    margin-left: 26%;
+    height: 500px;
+    margin-top: -314px;
+    /* background-color: pink; */
+}
+
+.Welcome-container {
+    height: 200px;
+    width: 91%;
+    margin-top: 70px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 8px 0px #0000001A;
+    /* background-color: #EDB046; */
+}
+
+.girl-image {
+    height: 225px;
+    margin-top: 19px;
+    margin-right: -19px
+}
+
+.Welcome-title {
+    font-family: Lexend;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 55px;
+    text-align: left;
+
+}
+
+.Welcome-sub-title {
+    font-family: Lexend;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    margin-top: 9px;
+
+}
+
+.title {
+    margin-left: 50px;
+    margin-top: 41px;
+}
+
+.task-list {
+    margin-top: 50px;
+    width: 91%;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+
+}
+.delete-all, .current-date{
+    line-height: 35px;
+    vertical-align: middle;
+    font-family: Lexend;
+    font-size: 13px;
+    flex-grow: 1;
+}
+.delete-all{
+color: #BA5112;
+cursor: pointer;
+}
+
+.heading {
+    font-family: Lexend;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 35px;
+    text-align: left;
+    color: #251814;
+    flex-grow: 8;
+}
+.task-header{
+    margin-top: -6px;
+}
+
+.task-box {
+    height: 50px;
+    box-shadow: 2px 2px 8px 0px #0000001A;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.task-box-completed{
+    height: 50px;
+    box-shadow: 2px 2px 8px 0px #0000001A;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #EDB046;
+}
+
+.task-title {
+    font-family: Lexend;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 50px;
+}

@@ -1,0 +1,43 @@
+<header [currentFilter]="currentFilter"></header>
+<sidebar (tasksUpdated)="onTasksUpdated($event)" (filterChanged)="onFilterChanged($event)"></sidebar>
+
+
+<div class="dashboard-container">
+  <div *ngIf="currentFilter === 'all'" class="Welcome-container">
+    <div class="title">
+      <div class="Welcome-title">
+        Hello, Beautiful Human!
+      </div>
+      <div class="Welcome-sub-title">
+        What do you want to do today?
+      </div>
+    </div>
+    <div>
+      <img class="girl-image" src="../../../assets/Images/girl.svg">
+    </div>
+  </div>
+
+  <div class="task-list">
+    <div class="task-header">
+      <div class="heading">
+        Today's {{currentFilter}} Tasks
+      </div>
+      <div class="delete-all" (click)="myFunc()">
+        Delete All
+      </div>
+      <div class="current-date">
+        {{ currentDate | date:'EEEE, dd MMMM yyyy' }}
+      </div>
+      
+    </div>
+    <div  *ngFor="let task of tasks" [ngClass]="task.status ? 'task-box-completed' : 'task-box' ">
+      <div class="check-box">
+        <input type="checkbox" [(ngModel)]="task.status">
+      </div>
+      <div class="task-title">
+        {{ task.title }}
+      </div>
+     
+    </div>
+  </div>
+</div>
